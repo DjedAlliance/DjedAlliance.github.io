@@ -1,5 +1,4 @@
-
-![Djed Alliance 10-01](https://user-images.githubusercontent.com/1809436/181004691-18b5b010-c03d-44a6-83f6-63e10516c858.png)
+<img width="251" alt="Circular Text White Background Small" src="https://user-images.githubusercontent.com/1809436/181006206-c3e970c1-bac5-40d4-9dff-be0f8a977030.png">
 
 
 * **GitHub**:      https://github.com/DjedAlliance
