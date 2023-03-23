@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+#root {
+  min-width: 100vw;
+  min-height: 200vh;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #0E1127;
+}
+
+.navColor {
+  color: rgba(243, 193, 129, 1);
+}
+
+.title {
+  font-family: 'Space Mono', monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 80px;
+  letter-spacing: -0.01em;
+
+  color: #F3C181;
+}
+
+.card {
+  background: #111322;
+  box-shadow: 0px 0px 6px #F9EBDB;
+  border-radius: 14px;
+}
+
+.cardTitle {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #D68323;
+}
+
+.cardSubtitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+
+  color: #F9EBDB;
+}
+
+.wrap {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 155px;
+  height: 70px;
+  left: 50px;
+  top: 375px;
+  border-radius: 50%;
+
+  border: 3.5px solid #F9EBDB;
+}
+
+.link-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #F9EBDB;
+}
+
+.subtitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+
+  color: #F9EBDB;
+}
+
+.active {
+  display: inline;
+  border-bottom: 2px solid rgba(243, 193, 129, 1);
+}
+
+.dappsTitle {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+
+  text-align: center;
+
+  color: #F3C181;
+}
+
+.contactParagraph {
+  color: rgba(249, 235, 219, 1);
+}
+
+.dappsSubtitle {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+
+  text-align: center;
+
+  color: #D68323;
+}
+
+.orange-blur {
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  right: 0px;
+  top: 576px;
+  
+  background: #CC762E59;
+  filter: blur(400px);
+}
+
+.blue-blur {
+  position: absolute;
+  width: 10vw;
+  left: 225px;
+  top: 225px;
+  background: #0E1127;
+  filter: blur(395px);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 100vw;
+  max-height: max-content;
+}
