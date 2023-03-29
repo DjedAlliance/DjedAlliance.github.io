@@ -1,4 +1,17 @@
 import ContributorCard from '../../elements/cards/ContributorCard';
+import ErgoImage from '../../../assets/ergo.png';
+import MilkomedaImage from '../../../assets/milkomeda.png';
+import DcSparkImage from '../../../assets/dcSpark.png';
+import ThespianImage from '../../../assets/thespian.png';
+import VacuumLabsImage from '../../../assets/vacuumlabs.svg';
+import BloxicoImage from '../../../assets/bloxico.svg';
+import AossieImage from '../../../assets/aossie.webp';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper';
 
 export default function Contributors (): JSX.Element {
 	return (
@@ -8,12 +21,34 @@ export default function Contributors (): JSX.Element {
 			<div className='item-center align-middle justify-center'>
 				<p className='contactParagraph my-10'>We are glad that we have partners who have recognized our values.</p>
 			</div>
-			<div className="flex items-center align-middle justify-center">
-				<ContributorCard contributor="dcSpark" twitterHandle="@dcspark_io" />
-				<ContributorCard contributor="Milkomeda" twitterHandle="@Milkomeda_com" />
-				<ContributorCard contributor="Thespian" twitterHandle="@ThespianAgency" />
-				<ContributorCard contributor="Ergo" twitterHandle="@Ergo_Platform" />
-			</div>
+			<Swiper watchSlidesProgress={true} slidesPerView={4}        pagination={{
+				type: 'progressbar',
+			}}
+			navigation={false}
+			modules={[Pagination, Navigation]}
+			className="mySwiper">
+				<SwiperSlide>
+					<ContributorCard contributor="dcSpark" imageSrc={DcSparkImage}/>
+				</SwiperSlide>
+				<SwiperSlide>
+					<ContributorCard contributor="Milkomeda" imageSrc={MilkomedaImage} />
+				</SwiperSlide>
+				<SwiperSlide>
+					<ContributorCard contributor="Thespian" imageSrc={ThespianImage} />
+				</SwiperSlide>
+				<SwiperSlide>
+					<ContributorCard contributor="Ergo" imageSrc={ErgoImage} />
+				</SwiperSlide>
+				<SwiperSlide>
+					<ContributorCard contributor="VacuumLabs" imageSrc={VacuumLabsImage} />
+				</SwiperSlide>
+				<SwiperSlide>
+					<ContributorCard contributor="Bloxico" imageSrc={BloxicoImage} />
+				</SwiperSlide>
+				<SwiperSlide>
+					<ContributorCard contributor="Aossie" imageSrc={AossieImage} />
+				</SwiperSlide>
+			</Swiper>
 		</div>
 	);
 }
