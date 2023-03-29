@@ -11,9 +11,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper';
+import { Pagination, Navigation, Autoplay } from 'swiper';
 
-export default function Contributors (): JSX.Element {
+interface Props {
+	slidesPerView: number
+}
+
+export default function Contributors (props: Props): JSX.Element {
 	return (
 		<div className="py-20 my-20 items-center" id="contributors">
 			<h4 className='dappsSubtitle my-3'>Valuable Team</h4>
@@ -21,12 +25,16 @@ export default function Contributors (): JSX.Element {
 			<div className='item-center align-middle justify-center'>
 				<p className='contactParagraph my-10'>We are glad that we have partners who have recognized our values.</p>
 			</div>
-			<Swiper watchSlidesProgress={true} slidesPerView={4}        pagination={{
-				type: 'progressbar',
-			}}
-			navigation={false}
-			modules={[Pagination, Navigation]}
-			className="mySwiper">
+			<Swiper        
+				autoplay={{
+					delay: 2000,
+					disableOnInteraction: false,
+				}} watchSlidesProgress={true} slidesPerView={props.slidesPerView} pagination={{
+					type: 'progressbar',
+				}}
+				navigation={false}
+				modules={[Pagination, Navigation, Autoplay]}
+				className="mySwiper">
 				<SwiperSlide>
 					<ContributorCard contributor="dcSpark" imageSrc={DcSparkImage}/>
 				</SwiperSlide>
