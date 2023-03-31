@@ -13,6 +13,15 @@
   color: rgba(243, 193, 129, 1);
 }
 
+.footerText {
+  color: #F9EBDB;
+}
+
+.socialImage {
+  height: 32px;
+  width: 32px;
+}
+
 .title {
   font-family: 'Space Mono', monospace;
   font-style: normal;
