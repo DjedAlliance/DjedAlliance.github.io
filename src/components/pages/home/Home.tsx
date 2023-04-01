@@ -1,4 +1,4 @@
-import MainImage from '../../../assets/pexels-cottonbro-6140202.png';
+import MainImage from '../../../assets/gallery/djed-46.jpg';
 import DoorImageLeft from '../../../assets/door-closed-left.png';
 import DoorImageRight from '../../../assets/door-closed-right.png';
 import DoubleDoorAnimation from '../../blocks/animation/DoubleDoorAnimation';
