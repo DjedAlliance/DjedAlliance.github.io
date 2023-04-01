@@ -1,8 +1,8 @@
 import DappCard from '../../elements/cards/DappCard';
 
 export default function Dapps (): JSX.Element {
-	const cardTextMilkomeda = 'Interact with Djed on the Milkomeda-C1 EVM-Compatible Sidechain of Cardano.';
-	const cardTextSig = 'Interact with SigmaUSD, the first ever deployment of Djed, on the Ergo Blockchain.';
+	const cardTextMilkomeda = 'Interact with Djed on the Milkomeda-C1\nEVM-Compatible Sidechain of Cardano.';
+	const cardTextSig = 'Interact with SigmaUSD,\nthe first ever deployment of Djed,\non the Ergo Blockchain.';
 
 	return (
 		<div className="py-20 my-20 items-center" id="djed_apps">
