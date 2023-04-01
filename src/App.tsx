@@ -8,7 +8,7 @@ import Footer from './components/pages/footer/Footer';
 
 const App: React.FC = () => {
 	const heroText = 'Djed Alliance';
-	const heroSubtitle = 'Bringing reliable sustainability\nto the cryptocurrency industry.';
+	const heroSubtitle = 'Bringing reliable stability\nto the cryptocurrency industry.';
 
 	const [slidesPerView, setSlidesPerView] = useState(4);
 

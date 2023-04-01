@@ -25,7 +25,7 @@ const Header: React.FC = () => {
 				<div className="flex items-center space-x-1">
 					<ul className="hidden space-x-2 md:inline-flex">
 						<li><a id="homeLink" className="active px-4 py-2 font-semibold navColor cursor-pointer" onClick={() => handleActive('homeLink', '#')}>HOME</a></li>
-						<li><a id="appsLink" className="px-4 py-2 font-semibold navColor cursor-pointer" onClick={() => handleActive('appsLink', 'djed_apps')}>DJED DAPPS</a></li>
+						<li><a id="appsLink" className="px-4 py-2 font-semibold navColor cursor-pointer" onClick={() => handleActive('appsLink', 'djed_apps')}>DJED</a></li>
 						<li><a id="contributorsLink" className="px-4 py-2 font-semibold navColor cursor-pointer" onClick={() => handleActive('contributorsLink', 'contributors')}>CONTRIBUTORS</a></li>
 						<li><a href="https://docs.djed.one/alliance/the-djed-alliance" target="_blank" className="px-4 py-2 font-semibold navColor" rel="noreferrer">DOCS</a></li>
 					</ul>

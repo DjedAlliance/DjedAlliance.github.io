@@ -20,7 +20,7 @@ interface Props {
 export default function Contributors (props: Props): JSX.Element {
 	return (
 		<div className="py-20 my-20 items-center" id="contributors">
-			<h4 className='dappsSubtitle my-3'>Community</h4>
+			<h4 className='dappsSubtitle my-3'>The Alliance&apos;s</h4>
 			<h2 className='dappsTitle mb-20'>Contributors</h2>
 			{/* <div className='item-center align-middle justify-center'>
 				<p className='contactParagraph my-10'>We are glad that we have partners who have recognized our values.</p>
