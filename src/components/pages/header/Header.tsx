@@ -1,4 +1,7 @@
 import Logo from '../../../assets/djed-logo.png';
+import Discord from '../../../assets/discordLogo.png';
+import GitHub from '../../../assets/githubLogo.png';
+import Twitter from '../../../assets/Twitter.png';
 
 const Header: React.FC = () => {
 
@@ -28,6 +31,10 @@ const Header: React.FC = () => {
 						<li><a id="appsLink" className="px-4 py-2 font-semibold navColor cursor-pointer" onClick={() => handleActive('appsLink', 'djed_apps')}>DJED</a></li>
 						<li><a id="contributorsLink" className="px-4 py-2 font-semibold navColor cursor-pointer" onClick={() => handleActive('contributorsLink', 'contributors')}>CONTRIBUTORS</a></li>
 						<li><a href="https://docs.djed.one/alliance/the-djed-alliance" target="_blank" className="px-4 py-2 font-semibold navColor" rel="noreferrer">DOCS</a></li>
+						<li><a href="https://djed.medium.com/" target="_blank" className="px-4 py-2 font-semibold navColor" rel="noreferrer">BLOG</a></li>
+						<li><a href="https://discord.com/invite/5TWZwGXXym" target="_blank" rel="noreferrer"><img className="socialImage mx-2 cursor-pointer" src={Discord} /></a></li>
+						<li><a href="https://github.com/DjedAlliance" target="_blank" rel="noreferrer"><img className="socialImage mx-2 cursor-pointer" src={GitHub} /></a></li>
+						<li><a href="https://twitter.com/DjedAlliance" target="_blank" rel="noreferrer"><img className="socialImage mx-2 cursor-pointer" src={Twitter} /></a></li>
 					</ul>
 					<div className="inline-flex md:hidden text-white">
 						<button className="flex-none px-2">
