@@ -7,7 +7,7 @@ const Footer = () => {
 	return (
 		<footer>
 			<div className='flex flex-row justify-evenly align-middle'>
-				<p className='footerText text-md mt-3 mx-3'>© Djed.one. All rights reserved</p>
+				<p className='footerText text-md mt-3 mx-3'>© Djed Alliance. All rights reserved.</p>
 				<div className='flex flex-row'>
 					<img src={Logo} />
 					<p className='footerText text-xl mt-3 mx-3'>Djed Alliance</p>
