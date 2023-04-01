@@ -1,4 +1,4 @@
-import MainImage from '../../../assets/gallery/djed-46.jpg';
+import MainImage from '../../../assets/gallery/djed-43.png';
 import DoorImageLeft from '../../../assets/door-closed-left.png';
 import DoorImageRight from '../../../assets/door-closed-right.png';
 import DoubleDoorAnimation from '../../blocks/animation/DoubleDoorAnimation';
