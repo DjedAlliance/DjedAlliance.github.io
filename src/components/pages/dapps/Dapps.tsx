@@ -6,8 +6,8 @@ export default function Dapps (): JSX.Element {
 
 	return (
 		<div className="py-20 my-20 items-center" id="djed_apps">
+			<h4 className='dappsSubtitle my-3'>Multiple Deployments of</h4>
 			<h2 className='dappsTitle mb-20'>Djed</h2>
-			<h4 className='dappsSubtitle my-3'>On Multiple Blockchains</h4>
 			<div className="flex align-middle justify-center">
 				<DappCard cardTitle="SigmaUSD" cardText={cardTextSig} cardHref="https://sigmausd.io/#/"/>
 				<DappCard cardTitle="Milkomeda-C1 Djed Dollar" cardText={cardTextMilkomeda} cardHref="https://milkomeda.com/"/>
