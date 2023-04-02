@@ -1,9 +1,10 @@
-import ArrowButton from '../../blocks/svg/ArrowButton';
+// import ArrowButton from '../../blocks/svg/ArrowButton';
 
 interface Props {
   cardTitle: string
   cardText: string
-  cardHref: string
+//   cardHref: string
+  children: React.ReactNode;
 }
 
 const DappCard = (props: Props): JSX.Element => {
@@ -15,12 +16,13 @@ const DappCard = (props: Props): JSX.Element => {
 					{props.cardText}
 				</p>
 			</div>
-			<div className="px-6 pt-4 pb-2 m-5">
+			{props.children};
+			{/* <div className="px-6 pt-4 pb-2 m-5">
 				<div className='flex flex-row align-middle my-6'>
 					<a href={props.cardHref} target="_blank" rel="noreferrer"><p className='text-white mt-0 lg:mt-5 m-0 lg:m-3 md:mt-4 md:mx-4'>Launch {props.cardTitle}</p></a>
 					<span className='hidden lg:block md:block'><ArrowButton onClick={() => window.open(props.cardHref, '_blank')}/></span>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };
