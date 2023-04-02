@@ -14,6 +14,6 @@ const DappLink = (props: Props): JSX.Element => {
 			</div>
 		</div>
 	);
-}
+};
 
 export default DappLink;
