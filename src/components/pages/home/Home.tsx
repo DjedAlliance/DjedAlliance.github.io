@@ -1,6 +1,5 @@
-import MainImage from '../../../assets/gallery/djed-43.png';
-import DoorImageLeft from '../../../assets/door-closed-left.png';
-import DoorImageRight from '../../../assets/door-closed-right.png';
+import DoorImageLeft from '../../../assets/door-left.png';
+import DoorImageRight from '../../../assets/door-right.png';
 import DoubleDoorAnimation from '../../blocks/animation/DoubleDoorAnimation';
 import Blur from '../../elements/blur/Blur';
 
@@ -11,8 +10,24 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = (props: HomeProps) => {
 	const { heroText, heroSubtitle } = props;
 
+	function getRandomImage(): string {
+		const randomNumber = Math.floor(Math.random() * 57) + 1;
+		let format = 'jpg';
+		if (randomNumber >= 19 && randomNumber <= 22) {
+			format = 'png';
+		} else if (randomNumber === 23) {
+			format = 'jpg';
+		} else if (randomNumber === 43) {
+			format = 'png';
+		} else if (randomNumber >= 24 && randomNumber <= 30) {
+			format = 'jpeg';
+		}
+		return `/gallery/djed-${randomNumber}.${format}`;
+	}
+
+
 	return (
-		<section className="flex items-center lg:justify-evenly bg-transparent ml-20" id="home" style={{ height: '90vh' }}>
+		<section className="flex items-center lg:justify-center bg-transparent" id="home" style={{ height: '90vh' }}>
 			<div className="flex z-40 items-center">
 				<div className="z-10 lg:mx-20 mx-10">
 					<h1 className="title text-left flex items-start mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl whitespace-pre">{heroText}</h1>
@@ -23,7 +38,7 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
 					</a>
 				</div>
 				<div className="hidden lg:flex justify-end cursor-pointer">
-					<DoubleDoorAnimation mainImage={MainImage} leftCoverImage={DoorImageLeft} rightCoverImage={DoorImageRight} />
+					<DoubleDoorAnimation mainImage={getRandomImage()} leftCoverImage={DoorImageLeft} rightCoverImage={DoorImageRight} />
 				</div>
 			</div>
 			<Blur />

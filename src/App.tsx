@@ -46,7 +46,6 @@ const App: React.FC = () => {
 						document.getElementsByClassName('active')[0].classList.remove('active');
 						document.getElementById('contributorsLink')?.classList.add('active');
 					}
-					console.log(entry);
 				}
 			});
 		}, { threshold: 0.8 });
@@ -60,13 +59,6 @@ const App: React.FC = () => {
 		}
 	}, []);
 	
-
-  
-
-  
-
-  
-
 	return (
 		<>
 			<Header />

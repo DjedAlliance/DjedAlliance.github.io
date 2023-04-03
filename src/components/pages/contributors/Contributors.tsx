@@ -1,6 +1,6 @@
 import ContributorCard from '../../elements/cards/ContributorCard';
 import ErgoImage from '../../../assets/ergo.png';
-import MilkomedaImage from '../../../assets/milkomeda.png';
+import MilkomedaImage from '../../../assets/milkomeda.jpeg';
 import DcSparkImage from '../../../assets/dcSpark.png';
 import ThespianImage from '../../../assets/thespian.png';
 import VacuumLabsImage from '../../../assets/vacuumlabs.svg';
@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination, Navigation, Autoplay } from 'swiper';
+import { Navigation, Autoplay } from 'swiper';
 
 interface Props {
 	slidesPerView: number
@@ -22,22 +22,17 @@ export default function Contributors (props: Props): JSX.Element {
 		<div className="py-20 my-20 items-center" id="contributors">
 			<h4 className='dappsSubtitle my-3'>The Alliance&apos;s</h4>
 			<h2 className='dappsTitle mb-20'>Contributors</h2>
-			{/* <div className='item-center align-middle justify-center'>
-				<p className='contactParagraph my-10'>We are glad that we have partners who have recognized our values.</p>
-			</div> */}
-			<Swiper        
+			<Swiper
+				loop
+				loopedSlides={props.slidesPerView - 1}
 				autoplay={{
 					delay: 2000,
 					disableOnInteraction: false,
+					
 				}} 
-				watchSlidesProgress={true} 
 				slidesPerView={props.slidesPerView} 
-				pagination={{
-					type: 'progressbar',
-				}}
 				navigation={false}
-				modules={[Pagination, Navigation, Autoplay]}
-				className="mySwiper">
+				modules={[Navigation, Autoplay]}>
 				<SwiperSlide>
 					<ContributorCard contributor="Ergo" imageSrc={ErgoImage} contributorWeb="https://ergoplatform.org/en/" />
 				</SwiperSlide>

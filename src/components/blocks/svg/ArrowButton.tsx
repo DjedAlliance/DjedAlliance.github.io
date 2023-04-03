@@ -1,6 +1,7 @@
 interface Props {
 	width?: string
 	height?: string
+	color?: string
 	onClick?: () => void
 }
 
@@ -9,7 +10,7 @@ export default function ArrowButton (props: Props): JSX.Element {
 		<div className="cursor-pointer" onClick={props.onClick}>
 			<svg width={props.width || '62'} height={props.height || '62'} viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g filter="url(#filter0_d_43_44)">
-					<rect x="6" y="6" width="50" height="50" rx="25" fill="#141525"/>
+					<rect x="6" y="6" width="50" height="50" rx="25" fill={props.color || '#141525'} />
 				</g>
 				<path d="M41 31L35.9713 27L35.9713 30.2L21 30.2L21 31.8L35.9713 31.8L35.9713 35L41 31Z" fill="#F9EBDB"/>
 				<defs>

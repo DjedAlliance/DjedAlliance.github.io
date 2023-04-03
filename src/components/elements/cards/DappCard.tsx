@@ -14,7 +14,7 @@ const DappCard = (props: Props): JSX.Element => {
 				</p>
 			</div>
 			<div className="px-6 pt-4 pb-2 m-2">
-				{props.children};
+				{props.children}
 			</div>
 		</div>
 	);
