@@ -48,7 +48,6 @@ const Header: React.FC = () => {
 						<li><a href="https://discord.com/invite/5TWZwGXXym" target="_blank" rel="noreferrer"><img className="socialImage mx-2 cursor-pointer" src={Discord} /></a></li>
 						<li><a href="https://github.com/DjedAlliance" target="_blank" rel="noreferrer"><img className="socialImage mx-2 cursor-pointer" src={GitHub} /></a></li>
 						<li><a href="https://twitter.com/DjedAlliance" target="_blank" rel="noreferrer"><img className="socialImage mx-2 cursor-pointer" src={Twitter} /></a></li>
-						<li><a href="https://docs.djed.one/alliance/the-djed-alliance" target="_blank" className="px-4 py-2 font-semibold navColor" rel="noreferrer">DOCS</a></li> 			
 					</ul>
 				</div>
 			</div>
