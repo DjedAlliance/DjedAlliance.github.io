@@ -12,7 +12,7 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
 
 	function getRandomImage(): string {
 		const randomNumber = Math.floor(Math.random() * 57) + 1;
-		let format = 'jpg';
+		const format = 'jpg';
 		return `/gallery/djed-${randomNumber}.${format}`;
 	}
 
