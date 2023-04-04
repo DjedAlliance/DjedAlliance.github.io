@@ -3,8 +3,8 @@ import DappLink from '../../elements/cards/DappLink';
 
 export default function Dapps (): JSX.Element {
 	const cardTextErgo = 'Interact with SigmaUSD,\nthe first deployment of Djed,\non the Ergo Blockchain.';
-	const cardTextCOTI = 'Interact with Djed implemented in Plutus on the Cardano Blockchain.';
-	const cardTextMilkomeda = 'Interact with Djed on the Milkomeda-C1\nEVM-Compatible Sidechain of Cardano.\nTestnet! (Mainnet coming soon!)';
+	const cardTextCOTI = 'Interact with Djed implemented in Plutus\non the Cardano Blockchain.';
+	const cardTextMilkomeda = 'Interact with Djed on Milkomeda-C1\nEVM-Compatible Sidechain of Cardano.\nTestnet! (Mainnet coming soon!)';
 
 	return (
 		<div className="py-20 my-20 items-center" id="djed_apps">
