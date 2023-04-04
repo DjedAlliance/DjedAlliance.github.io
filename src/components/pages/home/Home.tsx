@@ -13,15 +13,6 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
 	function getRandomImage(): string {
 		const randomNumber = Math.floor(Math.random() * 57) + 1;
 		let format = 'jpg';
-		if (randomNumber >= 19 && randomNumber <= 22) {
-			format = 'png';
-		} else if (randomNumber === 23) {
-			format = 'jpg';
-		} else if (randomNumber === 43) {
-			format = 'png';
-		} else if (randomNumber >= 24 && randomNumber <= 30) {
-			format = 'jpeg';
-		}
 		return `/gallery/djed-${randomNumber}.${format}`;
 	}
 
