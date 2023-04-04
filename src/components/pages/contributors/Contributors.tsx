@@ -1,6 +1,6 @@
 import ContributorCard from '../../elements/cards/ContributorCard';
 import ErgoImage from '../../../assets/ergo.png';
-import MilkomedaImage from '../../../assets/milkomeda.jpeg';
+import MilkomedaImage from '../../../assets/milkomeda.svg';
 import DcSparkImage from '../../../assets/dcSpark.png';
 import ThespianImage from '../../../assets/thespian.png';
 import VacuumLabsImage from '../../../assets/vacuumlabs.svg';
@@ -49,7 +49,7 @@ export default function Contributors (props: Props): JSX.Element {
 					<ContributorCard contributor="Bloxico" imageSrc={BloxicoImage} contributorWeb="https://bloxico.com/" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<ContributorCard contributor="Aossie" imageSrc={AossieImage} contributorWeb="https://www.aossie.org/" />
+					<ContributorCard contributor="AOSSIE" imageSrc={AossieImage} contributorWeb="https://www.aossie.org/" />
 				</SwiperSlide>
 				<SwiperSlide>
 					<ContributorCard contributor="Thespian" imageSrc={ThespianImage} contributorWeb="https://www.thespian.eu/" />

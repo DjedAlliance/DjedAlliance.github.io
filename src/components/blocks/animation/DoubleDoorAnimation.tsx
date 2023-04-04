@@ -8,7 +8,7 @@ interface Props {
 }
 
 const DoubleDoorAnimation: React.FC<Props> = (props: Props) => {
-	const ANIMATION_DURATION = 10;
+	const ANIMATION_DURATION = 7;
 
 	const [height, setHeight] = useState<string>('');
 
