@@ -29,7 +29,7 @@ const Header: React.FC = () => {
 	// }
 
 	return (
-		<nav className="sticky top-0 w-full px-2 py-1 hover:bg-stone-300/10 lg:bg-transparent md:bg-transparent bg-stone-300/10 sm:px-4 z-50">
+		<nav className="sticky top-0 w-full px-2 py-1 hover:bg-stone-900/90 lg:bg-transparent bg-stone-900/90 sm:px-4 z-50">
 			<div className="flex items-center justify-between mx-auto align-middle">
 				<a href="#">
 					<span className="text-2xl font-extrabold navColor"><img src={Logo} className="w-12 ml-6" /></span>

@@ -10,7 +10,7 @@ export default function Dapps (): JSX.Element {
 		<div className="py-20 my-20 items-center" id="djed_apps">
 			<h4 className='dappsSubtitle my-3'>Deployments of</h4>
 			<h2 className='dappsTitle mb-20'>Djed</h2>
-			<div className="flex align-middle justify-center">
+			<div className="sm:flex-row lg:flex align-middle justify-center">
 				<DappCard cardTitle="SigmaUSD" cardText={cardTextErgo}>
 					<DappLink text="sigmausd.io" href="https://sigmausd.io/#/" />
 					<DappLink text="tokenjay.app" href="https://tokenjay.app/app/#ageusd" />
