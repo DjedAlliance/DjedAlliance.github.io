@@ -10,7 +10,7 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = (props: HomeProps) => {
 	const { heroText, heroSubtitle } = props;
 
-	const NUMBER_OF_IMAGES = 56;
+	const NUMBER_OF_IMAGES = 57;
 
 	function getRandomImage(): string {
 		const randomNumber = Math.floor(Math.random() * NUMBER_OF_IMAGES) + 1;
