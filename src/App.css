@@ -2,11 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 #root {
-  min-width: 100vw;
-  min-height: 200vh;
+  max-width: 100vw !important;
   margin: 0 auto;
   text-align: center;
   background-color: #151515;
+}
+
+.app-wrapper {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+
 }
 
 .navColor {
@@ -160,7 +166,7 @@
   width: 30vw;
   height: 60vh;
   left: 0;
-  top: 150vh;
+  top: 90vh;
   animation: move 10s linear infinite;
 
   background: #CC762E59;

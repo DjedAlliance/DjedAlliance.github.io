@@ -6,7 +6,7 @@ import Twitter from '../../../assets/Twitter.png';
 const Footer = () => {
 	return (
 		<footer className='my-5'>
-			<div className='flex lg:flex-row md:flex-row flex-col lg:justify-evenly align-middle sm:justify-center'>
+			<div className='flex lg:flex-row flex-col lg:justify-evenly align-middle sm:justify-center md:justify-center'>
 				<p className='footerText lg:text-md sm:text-sm lg:mt-6 mb-3'>© Djed Alliance. All rights reserved.</p>
 				<div className='flex flex-row justify-center align-middle lg:my-0 my-3'>
 					<img src={Logo}  className="mx-2 mb-1" />

@@ -1,5 +1,6 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { handleAnimationHeight, handleAnimationMargin, handleAnimationWidth } from './animationHelpers';
 
 interface Props {
   mainImage: string
@@ -7,9 +8,13 @@ interface Props {
   rightCoverImage: string
 }
 
-const DoubleDoorAnimation: React.FC<Props> = (props: Props) => {
-	const ANIMATION_DURATION = 7;
+const ANIMATION_DURATION = 7;
 
+const ANIMATION_WIDTH = handleAnimationWidth();
+const ANIMATION_HEIGHT = handleAnimationHeight();
+const ANIMATION_MARGIN = handleAnimationMargin();
+
+const DoubleDoorAnimation: React.FC<Props> = (props: Props) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const controlsLeft = useAnimation();
 	const controlsRight = useAnimation();
@@ -55,7 +60,7 @@ const DoubleDoorAnimation: React.FC<Props> = (props: Props) => {
 
 	return (
 		<div className="relative flex flex-row" onMouseDown={async () => { isOpen ? await handleClose() : await handleOpen(); } }>
-			<img className='rounded-3xl items-center flex justify-center align-middle' src={props.mainImage} style={{ width: window.innerWidth <= 1185 ? '90vw' : '41vw', height: window.innerWidth <= 1185 ? '40vh' : '70vh', margin: window.innerWidth <= 1185 ? '25px' : '40px' }} alt="main image" />
+			<img className='rounded-3xl items-center flex justify-center align-middle' src={props.mainImage} style={{ width: ANIMATION_WIDTH, margin: ANIMATION_MARGIN, height: ANIMATION_HEIGHT }} alt="main image" />
 			<motion.img
 				src={props.leftCoverImage}
 				alt="left cover image"

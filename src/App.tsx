@@ -60,13 +60,13 @@ const App: React.FC = () => {
 	}, []);
 	
 	return (
-		<>
+		<div className='app-wrapper'>
 			<Header />
 			<Home heroText={heroText} heroSubtitle={heroSubtitle}/>
 			<Dapps />
 			<Contributors slidesPerView={slidesPerView}/>
 			<Footer />
-		</>
+		</div>
 	);
 };
 

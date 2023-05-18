@@ -7,10 +7,10 @@ export default function Dapps (): JSX.Element {
 	const cardTextMilkomeda = 'Interact with Djed on\nthe Milkomeda-C1\nEVM Sidechain of Cardano.';
 
 	return (
-		<div className="py-20 my-20 items-center" id="djed_apps">
+		<div className="py-20 my-20 items-center justify-center" id="djed_apps">
 			<h4 className='dappsSubtitle my-3'>Deployments of</h4>
 			<h2 className='dappsTitle mb-20'>Djed</h2>
-			<div className="sm:flex-row lg:flex align-middle justify-center">
+			<div className="sm:flex-row lg:flex align-middle justify-center md:flex">
 				<DappCard cardTitle="SigmaUSD" cardText={cardTextErgo}>
 					<DappLink text="sigmausd.io" href="https://sigmausd.io/#/" />
 					<DappLink text="tokenjay.app" href="https://tokenjay.app/app/#ageusd" />
