@@ -4,23 +4,15 @@ export const handleAnimationWidth = (): string => {
 	if (isMobile()) {
 		if (isShortHeight()) {
 			return '90vw';
+		} else if (isMediumHeight()) {
+			return '88vw';
 		} else if (isTallHeight()) {
-			return '90vw';
+			return '86vw';
 		}
 	} else if (isTablet()) {
-		if (isShortHeight()) {
-			return '85vw';
-		} else if (isTallHeight()) {
-			return '90vw';
-		}
+		return '90vw';
 	} else if (isDesktop()) {
-		if (isShortHeight()) {
-			return '45vw';
-		} else if (isMediumHeight()) {
-			return '45vw';
-		} else if (isTallHeight()) {
-			return '45vw';
-		}
+		return '41vw';
 	}
 	return '';
 };
@@ -28,24 +20,23 @@ export const handleAnimationWidth = (): string => {
 export const handleAnimationHeight = (): string => {
 	if (isMobile()) {
 		if (isShortHeight()) {
-			return '30vh';
-		} else if (isTallHeight()) {
+			return '33vh';
+		}else if (isMediumHeight()) {
 			return '35vh';
+		} else if (isTallHeight()) {
+			return '37vh';
 		}
 	} else if (isTablet()) {
 		if (isShortHeight()) {
-			return '45vh';
+			return '46vh';
+		} else if (isMediumHeight()) {
+			return '48vh';
 		} else if (isTallHeight()) {
 			return '50vh';
 		}
 	} else if (isDesktop()) {
-		if (isShortHeight()) {
-			return '75vh';
-		} else if (isMediumHeight()) {
-			return '75vh';
-		} else if (isTallHeight()) {
-			return '75vh';
-		}
+		return '75vh';
+		
 	}
 	return '';
 };
@@ -53,25 +44,17 @@ export const handleAnimationHeight = (): string => {
 
 export const handleAnimationMargin = (): string => {
 	if (isMobile()) {
-		if (isShortHeight()) {
-			return '20px';
-		} else if (isTallHeight()) {
-			return '35px';
-		}
+		return '1.5rem';
 	} else if (isTablet()) {
 		if (isShortHeight()) {
-			return '50px';
+			return '2.9rem';
+		} else if (isMediumHeight()) {
+			return '3rem';
 		} else if (isTallHeight()) {
-			return '55px';
+			return '3.3rem';
 		}
 	} else if (isDesktop()) {
-		if (isShortHeight()) {
-			return '75px';
-		} else if (isMediumHeight()) {
-			return '75px';
-		} else if (isTallHeight()) {
-			return '75px';
-		}
+		return '4.4rem';
 	}
 	return '';
 };

@@ -59,7 +59,7 @@ const DoubleDoorAnimation: React.FC<Props> = (props: Props) => {
 	};
 
 	return (
-		<div className="relative flex flex-row" onMouseDown={async () => { isOpen ? await handleClose() : await handleOpen(); } }>
+		<div className="relative flex flex-row justify-center w-full" onMouseDown={async () => { isOpen ? await handleClose() : await handleOpen(); } }>
 			<img className='rounded-3xl items-center flex justify-center align-middle' src={props.mainImage} style={{ width: ANIMATION_WIDTH, margin: ANIMATION_MARGIN, height: ANIMATION_HEIGHT }} alt="main image" />
 			<motion.img
 				src={props.leftCoverImage}

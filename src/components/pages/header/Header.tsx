@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 					<svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
 				</button>
 				<div className={`${!isOpen ? 'hidden' : 'block'} w-full md:block md:w-auto`} id="navbar-default">
-					<ul className={`${!isOpen ? 'hidden' : 'flex-col'} space-y-5 lg:space-y-0 md:inline-flex mr-6 align-middle justify-center items-center lg:inline-flex`}>
+					<ul className={`${!isOpen ? 'hidden' : 'flex-col'} lg:space-y-0 md:inline-flex mr-6 align-middle justify-center items-center lg:inline-flex`}>
 						<li><a id="homeLink" className="active px-4 py-2 font-semibold navColor cursor-pointer" onClick={() => handleActive('homeLink', '#')}>HOME</a></li>
 						<li><a id="appsLink" className="px-4 py-2 font-semibold navColor cursor-pointer" onClick={() => handleActive('appsLink', 'djed_apps')}>DJED</a></li>
 						<li><a id="contributorsLink" className="px-4 py-2 font-semibold navColor cursor-pointer" onClick={() => handleActive('contributorsLink', 'contributors')}>CONTRIBUTORS</a></li>
