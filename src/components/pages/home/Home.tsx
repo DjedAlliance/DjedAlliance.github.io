@@ -20,7 +20,7 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
 
 
 	return (
-		<section className="flex items-center lg:justify-center bg-transparent" id="home" style={{ height: '90vh' }}>
+		<section className="flex items-center lg:justify-center bg-transparent my-24" id="home" style={{ height: '90vh' }}>
 			<div className="lg:flex sm:flex-row z-40 items-center">
 				<div className="z-10 lg:mx-20 mx-10">
 					<h1 className="title text-left flex items-start mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl whitespace-pre">{heroText}</h1>
