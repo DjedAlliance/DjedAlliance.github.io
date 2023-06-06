@@ -6,7 +6,9 @@ import ThespianImage from '../../../assets/thespian.png';
 import VacuumLabsImage from '../../../assets/vacuumlabs.svg';
 import BloxicoImage from '../../../assets/bloxico.svg';
 import AossieImage from '../../../assets/aossie.webp';
-
+import CardanoTalent from '../../../assets/cardanoTalent.png';
+import WiringBitsImage from '../../../assets/wiring_bits_logo.png';
+import OccamXImage from '../../../assets/occam_x.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -53,6 +55,15 @@ export default function Contributors (props: Props): JSX.Element {
 				</SwiperSlide>
 				<SwiperSlide>
 					<ContributorCard contributor="Thespian" imageSrc={ThespianImage} contributorWeb="https://www.thespian.eu/" />
+				</SwiperSlide>
+				<SwiperSlide>
+					<ContributorCard contributor="OccamX" imageSrc={OccamXImage} contributorWeb="https://occamx.fi/" />
+				</SwiperSlide>
+				<SwiperSlide>
+					<ContributorCard contributor="WiringBits" imageSrc={WiringBitsImage} contributorWeb="https://wiringbits.net/" />
+				</SwiperSlide>
+				<SwiperSlide>
+					<ContributorCard contributor="Cardano Talent" imageSrc={CardanoTalent} contributorWeb="https://discord.gg/5U4Z3r2NJb" />
 				</SwiperSlide>
 			</Swiper>
 		</div>
