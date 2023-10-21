@@ -9,6 +9,7 @@ import AossieImage from '../../../assets/aossie.webp';
 import CardanoTalent from '../../../assets/cardanoTalent.png';
 import WiringBitsImage from '../../../assets/wiring_bits_logo.png';
 import OccamXImage from '../../../assets/occam_x.svg';
+import ZephyrImage from '../../../assets/zephyr-logo.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -64,6 +65,9 @@ export default function Contributors (props: Props): JSX.Element {
 				</SwiperSlide>
 				<SwiperSlide>
 					<ContributorCard contributor="Cardano Talent" imageSrc={CardanoTalent} contributorWeb="https://discord.gg/5U4Z3r2NJb" />
+				</SwiperSlide>
+				<SwiperSlide>
+					<ContributorCard contributor="Zephyr Protocol" imageSrc={ZephyrImage} contributorWeb="https://zephyrprotocol.com" />
 				</SwiperSlide>
 			</Swiper>
 		</div>
