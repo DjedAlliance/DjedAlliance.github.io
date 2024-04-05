@@ -44,7 +44,7 @@ const Header: React.FC = () => {
 						<li><a href="https://docs.stability.nexus/about-us/the-djed-alliance" target="_blank" className="px-4 md:py-2 font-semibold navColor" rel="noreferrer">DOCS</a></li>
 						<li><a href="https://medium.com/djed-alliance" target="_blank" className="px-4 md:py-2 font-semibold navColor" rel="noreferrer">BLOG</a></li>
 						<ul className="flex justify-center">
-							<li><a href="https://discord.com/invite/5TWZwGXXym" target="_blank" rel="noreferrer"><img className="socialImage mx-2 cursor-pointer" src={Discord} /></a></li>
+							<li><a href="https://discord.gg/YzDKeEfWtS" target="_blank" rel="noreferrer"><img className="socialImage mx-2 cursor-pointer" src={Discord} /></a></li>
 							<li><a href="https://github.com/DjedAlliance" target="_blank" rel="noreferrer"><img className="socialImage mx-2 cursor-pointer" src={GitHub} /></a></li>
 							<li><a href="https://twitter.com/DjedAlliance" target="_blank" rel="noreferrer"><img className="socialImage mx-2 cursor-pointer" src={Twitter} /></a></li>
 						</ul>
