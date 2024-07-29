@@ -31,7 +31,7 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
 					</a>
 				</div>
 				<div className="lg:flex justify-end cursor-pointer my-5">
-					<DoubleDoorAnimation mainImage={getRandomImage()} leftCoverImage={DoorImageLeft} rightCoverImage={DoorImageRight} />
+					<DoubleDoorAnimation mainImage="/gallery/Alliance.png" leftCoverImage={DoorImageLeft} rightCoverImage={DoorImageRight} />
 				</div>
 			</div>
 			<Blur />
