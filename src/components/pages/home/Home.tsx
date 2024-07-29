@@ -1,6 +1,6 @@
-import DoorImageLeft from '../../../assets/door-left.png';
-import DoorImageRight from '../../../assets/door-right.png';
-import DoubleDoorAnimation from '../../blocks/animation/DoubleDoorAnimation';
+//import DoorImageLeft from '../../../assets/door-left.png';
+//import DoorImageRight from '../../../assets/door-right.png';
+//import DoubleDoorAnimation from '../../blocks/animation/DoubleDoorAnimation';
 import Blur from '../../elements/blur/Blur';
 
 interface HomeProps {
@@ -10,13 +10,12 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = (props: HomeProps) => {
 	const { heroText, heroSubtitle } = props;
 
-	const NUMBER_OF_IMAGES = 57;
-
-	function getRandomImage(): string {
-		const randomNumber = Math.floor(Math.random() * NUMBER_OF_IMAGES) + 1;
-		const format = 'jpg';
-		return `/gallery/djed-${randomNumber}.${format}`;
-	}
+	// const NUMBER_OF_IMAGES = 57;
+	// function getRandomImage(): string {
+	// 	const randomNumber = Math.floor(Math.random() * NUMBER_OF_IMAGES) + 1;
+	// 	const format = 'jpg';
+	// 	return `/gallery/djed-${randomNumber}.${format}`;
+	// }
 
 
 	return (
@@ -31,7 +30,7 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
 					</a>
 				</div>
 				<div className="lg:flex justify-end cursor-pointer my-5">
-					<DoubleDoorAnimation mainImage="/gallery/Alliance.png" leftCoverImage={DoorImageLeft} rightCoverImage={DoorImageRight} />
+					<img className='rounded-3xl items-center flex justify-center align-middle' src="/gallery/Alliance.png" alt="Djed Alliance's Logo" />
 				</div>
 			</div>
 			<Blur />
