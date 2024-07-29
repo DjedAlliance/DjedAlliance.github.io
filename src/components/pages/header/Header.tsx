@@ -41,12 +41,12 @@ const Header: React.FC = () => {
 						<li><a id="homeLink" className="active px-4 md:py-2 font-semibold navColor cursor-pointer" onClick={() => handleActive('homeLink', '#')}>HOME</a></li>
 						<li><a id="appsLink" className="px-4 md:py-2 font-semibold navColor cursor-pointer" onClick={() => handleActive('appsLink', 'djed_apps')}>DJED</a></li>
 						<li><a id="contributorsLink" className="px-4 md:py-2 font-semibold navColor cursor-pointer" onClick={() => handleActive('contributorsLink', 'contributors')}>CONTRIBUTORS</a></li>
-						<li><a href="https://docs.stability.nexus/about-us/the-djed-alliance" target="_blank" className="px-4 md:py-2 font-semibold navColor" rel="noreferrer">DOCS</a></li>
-						<li><a href="https://medium.com/djed-alliance" target="_blank" className="px-4 md:py-2 font-semibold navColor" rel="noreferrer">BLOG</a></li>
+						<li><a href="https://docs.stability.nexus/about-us/the-djed-alliance" target="_blank" className="px-4 md:py-2 font-semibold navColor">DOCS</a></li>
+						<li><a href="https://medium.com/djed-alliance" target="_blank" className="px-4 md:py-2 font-semibold navColor">BLOG</a></li>
 						<ul className="flex justify-center">
-							<li><a href="https://discord.gg/YzDKeEfWtS" target="_blank" rel="noreferrer"><img className="socialImage mx-2 cursor-pointer" src={Discord} /></a></li>
-							<li><a href="https://github.com/DjedAlliance" target="_blank" rel="noreferrer"><img className="socialImage mx-2 cursor-pointer" src={GitHub} /></a></li>
-							<li><a href="https://twitter.com/DjedAlliance" target="_blank" rel="noreferrer"><img className="socialImage mx-2 cursor-pointer" src={Twitter} /></a></li>
+							<li><a href="https://discord.gg/YzDKeEfWtS" target="_blank"><img className="socialImage mx-2 cursor-pointer" src={Discord} /></a></li>
+							<li><a href="https://github.com/DjedAlliance" target="_blank"><img className="socialImage mx-2 cursor-pointer" src={GitHub} /></a></li>
+							<li><a href="https://twitter.com/DjedAlliance" target="_blank"><img className="socialImage mx-2 cursor-pointer" src={Twitter} /></a></li>
 						</ul>
 					</ul>
 				</div>

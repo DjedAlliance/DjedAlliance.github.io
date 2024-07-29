@@ -12,20 +12,10 @@ export default function Dapps(): JSX.Element {
 			<h4 className="dappsSubtitle my-3">Deployments of</h4>
 			<h2 className="dappsTitle mb-20">Djed</h2>
 			<div className="sm:flex-row lg:flex align-middle justify-center md:flex">
-				<DappCard cardTitle="SigmaUSD" cardText={cardTextErgo}>
-					<DappLink text="sigmausd.io" href="https://sigmausd.io/#/" />
-					<DappLink text="tokenjay.app" href="https://tokenjay.app/app/#ageusd" />
-				</DappCard>
-				<DappCard cardTitle="COTI's Djed" cardText={cardTextCOTI}>
-					<DappLink text="djed.xyz" href="https://djed.xyz/" />
-				</DappCard>
-				<DappCard cardTitle="Milkomeda-C1 Djed Dollar" cardText={cardTextMilkomeda}>
-					<DappLink text="milkomeda-c1.djed.one" href="https://milkomeda-c1.djed.one/" />
-				</DappCard>
-				<DappCard cardTitle="Zephyr Protocol" cardText={cardTextZephyr}>
-					<DappLink text="zephyrprotocol.com" href="https://zephyrprotocol.com/" />
-					<DappLink text="network.zephyrprotocol.com" href="https://network.zephyrprotocol.com/" />
-				</DappCard>
+				<DappCard cardTitle="SigmaUSD" href="https://sigmausd.io/#/" cardText={cardTextErgo} />
+				<DappCard cardTitle="Djed powered by COTI" href="https://djed.xyz/" cardText={cardTextCOTI} />
+				<DappCard cardTitle="Milkomeda Djed Osiris" href="https://milkomeda-c1.djed.one/" cardText={cardTextMilkomeda} />
+				<DappCard cardTitle="Zephyr Protocol" href="https://zephyrprotocol.com/" cardText={cardTextZephyr} />
 			</div>
 		</div>
 	);
