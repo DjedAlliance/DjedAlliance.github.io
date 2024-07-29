@@ -1,5 +1,4 @@
 import DappCard from '../../elements/cards/DappCard';
-import DappLink from '../../elements/cards/DappLink';
 
 export default function Dapps(): JSX.Element {
 	const cardTextErgo = 'Interact with SigmaUSD,\nthe first deployment of Djed,\non the Ergo Blockchain.';
