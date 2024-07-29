@@ -8,7 +8,7 @@ import Footer from './components/pages/footer/Footer';
 
 const App: React.FC = () => {
 	const heroText = 'Djed Alliance';
-	const heroSubtitle = 'Bringing reliable stability\nto the cryptocurrency industry.';
+	const heroSubtitle = 'The open union of all stablecoins based on the Djed Stablecoin Protocol, bringing reliable stability to the cryptocurrency space.';
 
 	const [slidesPerView, setSlidesPerView] = useState(4);
 
