@@ -3,7 +3,7 @@ import SigmaUSDImage from '../../../assets/sigmaUSD.jpg';
 import DjedMilkomeda from '../../../assets/djed-milkomeda.svg';
 import DjedCOTI from '../../../assets/djed-coti.png';
 import ZSDImage from '../../../assets/zsd1.png';
-import ECSDImage from '../../../assets/ecsd.svg';
+import ECSDImage from '../../../assets/ecsd.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
