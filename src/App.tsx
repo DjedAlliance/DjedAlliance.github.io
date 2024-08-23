@@ -8,7 +8,7 @@ import Footer from './components/pages/footer/Footer';
 
 const App: React.FC = () => {
 	const heroText = 'Djed Alliance';
-	const heroSubtitle = 'The open union of all stablecoins based on <br />the Djed Stablecoin Protocol';
+	const heroSubtitle = 'The open union of all stablecoins based on \n the Djed Stablecoin Protocol';
 
 	const [slidesPerView, setSlidesPerView] = useState(4);
 
@@ -63,7 +63,7 @@ const App: React.FC = () => {
 		<div className='app-wrapper'>
 			<Header />
 			<Home heroText={heroText} heroSubtitle={heroSubtitle}/>
-			<Dapps />
+			<Dapps slidesPerView={slidesPerView}/>
 			<Contributors slidesPerView={slidesPerView}/>
 			<Footer />
 		</div>
