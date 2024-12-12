@@ -21,12 +21,12 @@ export default function Contributors (props: Props): JSX.Element {
 			<h2 className='dappsTitle mb-20'>Djed Protocol</h2>
 			<Swiper
 				loop
-				loopedSlides={props.slidesPerView - 1}
+				loopedSlides={2}
 				autoplay={{
 					delay: 2000,
 					disableOnInteraction: true,
 				}} 
-				slidesPerView={props.slidesPerView} 
+				slidesPerView={3} 
 				navigation={false}
 				modules={[Navigation, Autoplay]}>
 				<SwiperSlide>
@@ -38,6 +38,17 @@ export default function Contributors (props: Props): JSX.Element {
 				<SwiperSlide>
 					<ContributorCard contributor="Ethereum Classic Stable Dollar" imageSrc={ECSDImage} contributorWeb="https://etc.djed.one/" />
 				</SwiperSlide>
+			</Swiper>
+			<Swiper
+				loop
+				loopedSlides={1}
+				autoplay={{
+					delay: 2000,
+					disableOnInteraction: true,
+				}} 
+				slidesPerView={props.slidesPerView-2} 
+				navigation={false}
+				modules={[Navigation, Autoplay]}>
 				<SwiperSlide>
 					<ContributorCard contributor="Djed powered by COTI" imageSrc={DjedCOTI} contributorWeb="https://djed.xyz" />
 				</SwiperSlide>
