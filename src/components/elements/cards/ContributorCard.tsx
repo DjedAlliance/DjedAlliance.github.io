@@ -13,7 +13,7 @@ export default function ContributorCard ({ contributor, imageSrc, contributorWeb
 				</div>
 			</div>
 			<div className="px-6 py-4">
-				<h3 className="font-bold text-xl mb-2 whitespace-pre">{contributor}</h3>
+				<h3 className="font-bold text-xl mb-2 text-wrap">{contributor}</h3>
 			</div>
 		</div>
 	);
