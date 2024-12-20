@@ -55,20 +55,19 @@
 <details open="open">
   <summary>Table of Contents</summary>
   <ul>
-    <li><a href="#-deploy-instructions"> ➤ Deploy Instructions</a></li>
+    <li><a href="#-deployment-instructions"> ➤ Deployment Instructions</a></li>
     <li><a href="#fund"> ➤ Fund Djed Alliance</a></li>
   </ul>
 </details>
 
 <!-- Project Description Start here -->
 
-# [![](public/readme-assets/pin.svg)](#deploy-instructions) DEPLOY INSTRUCTIONS
+# [![](public/readme-assets/pin.svg)](#deployment-instructions) Deployment Instructions
 
 1. Install dependencies `npm install || yarn install`
 2. On `main` branch run command `npm run deploy ||  yarn deploy`
 
 <!-- Use Back Button after each section -->
-
 <div align="right"><kbd><a href="#readme-top" style="color: #F7941D">↑ Back to top ↑</a></kbd></div>
 
 ---
