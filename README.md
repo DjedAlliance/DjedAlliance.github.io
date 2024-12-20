@@ -18,7 +18,7 @@
 <!-- Organization/Project Social Handles -->
 <p align="center">
 <!-- Email -->
-<a href="contact@djed.one">
+<a href="mailto:contact@djed.one">
 <img src="https://img.shields.io/badge/Email-red?style=flat&logo=maildotru"/></a>
 &nbsp;&nbsp;
 <!-- Telegram -->
@@ -34,7 +34,7 @@
 <img src="https://img.shields.io/discord/995968619034984528?style=flat&logo=discord&logoColor=white&logoSize=auto&label=Discord&labelColor=5865F2&color=57F287"/></a>
 &nbsp;&nbsp;
 <!-- Medium -->
-<a href="https://medium.com/DjedAlliance">
+<a href="https://medium.com/djed-alliance">
   <img src="https://img.shields.io/badge/Medium-%23000000.svg?logo=medium&logoColor=white" alt="Medium Badge"></a>
 </p>
 
@@ -43,13 +43,11 @@
 <br/>
 
 <!-- Project core values and objective -->
-<blockquote align="center">
   <div>&nbsp;</div>
   <strong>
   <em style="font-size: 15px;">The Djed Alliance is the open union of all stablecoins based on the <a href="https://docs.stability.nexus/djed-stablecoin-protocols/djed-overview" style="color: #D27728">Djed Stablecoin Protocol</a>, which was researched and developed by members of <a href="https://docs.stability.nexus/about-us/the-stable-order" style="color: #D27728">The Stable Order</a>.</em>
   </strong>
   <div>&nbsp;</div>
-</blockquote>
 
 <br/>
 
