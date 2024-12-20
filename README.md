@@ -45,7 +45,7 @@
 <!-- Project core values and objective -->
   <div>&nbsp;</div>
   <strong>
-  <em style="font-size: 15px;">The Djed Alliance is the open union of all stablecoins based on the <a href="https://docs.stability.nexus/djed-stablecoin-protocols/djed-overview" style="color: #D27728">Djed Stablecoin Protocol</a>, which was researched and developed by members of <a href="https://docs.stability.nexus/about-us/the-stable-order" style="color: #D27728">The Stable Order</a>.</em>
+  The Djed Alliance is the open union of all stablecoins based on the <a href="https://docs.stability.nexus/djed-stablecoin-protocols/djed-overview" style="color: #D27728">Djed Stablecoin Protocol</a>, which was researched and developed by members of <a href="https://docs.stability.nexus/about-us/the-stable-order" style="color: #D27728">The Stable Order</a>.
   </strong>
   <div>&nbsp;</div>
 
