@@ -5,7 +5,7 @@ import eslint from 'vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: '/DjedAlliance.github.io/',
+	base: '/',
 	plugins: [
 		react(),
 		checker({
