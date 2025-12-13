@@ -14,19 +14,19 @@ interface Props {
 	slidesPerView: number
 }
 
-export default function Contributors (props: Props): JSX.Element {
+export default function Contributors(props: Props): JSX.Element {
 	return (
-		<div className="py-20 my-20 items-center" id="contributors">
-			<h4 className='dappsSubtitle my-3'>Stablecoins based on the</h4>
-			<h2 className='dappsTitle mb-20'>Djed Protocol</h2>
+		<section className="py-20 my-20 items-center" id="djed_apps" aria-labelledby="djed-protocol-heading">
+			<p className='dappsSubtitle my-3'>Stablecoins based on the</p>
+			<h2 id="djed-protocol-heading" className='dappsTitle mb-20'>Djed Protocol</h2>
 			<Swiper
 				loop
 				loopedSlides={2}
 				autoplay={{
 					delay: 2000,
 					disableOnInteraction: true,
-				}} 
-				slidesPerView={3} 
+				}}
+				slidesPerView={3}
 				navigation={false}
 				modules={[Navigation, Autoplay]}>
 				<SwiperSlide>
@@ -45,8 +45,8 @@ export default function Contributors (props: Props): JSX.Element {
 				autoplay={{
 					delay: 2000,
 					disableOnInteraction: true,
-				}} 
-				slidesPerView={props.slidesPerView-2} 
+				}}
+				slidesPerView={props.slidesPerView - 2}
 				navigation={false}
 				modules={[Navigation, Autoplay]}>
 				<SwiperSlide>
@@ -56,7 +56,7 @@ export default function Contributors (props: Props): JSX.Element {
 					<ContributorCard contributor="Zephyr Stable Dollar" imageSrc={ZSDImage} contributorWeb="https://zephyrprotocol.com" />
 				</SwiperSlide>
 			</Swiper>
-		</div>
+		</section>
 	);
 }
 

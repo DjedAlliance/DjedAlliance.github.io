@@ -58,13 +58,15 @@ const App: React.FC = () => {
 			observer.observe(contributorElementToObserve);
 		}
 	}, []);
-	
+
 	return (
 		<div className='app-wrapper'>
 			<Header />
-			<Home heroText={heroText} heroSubtitle={heroSubtitle}/>
-			<Dapps slidesPerView={slidesPerView}/>
-			<Contributors slidesPerView={slidesPerView}/>
+			<main>
+				<Home heroText={heroText} heroSubtitle={heroSubtitle} />
+				<Dapps slidesPerView={slidesPerView} />
+				<Contributors slidesPerView={slidesPerView} />
+			</main>
 			<Footer />
 		</div>
 	);
