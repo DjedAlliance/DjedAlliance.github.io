@@ -1,6 +1,5 @@
 import ContributorCard from '../../elements/cards/ContributorCard';
 import ErgoImage from '../../../assets/ergo.png';
-import MilkomedaImage from '../../../assets/milkomeda.svg';
 import DcSparkImage from '../../../assets/dcSpark.png';
 import ThespianImage from '../../../assets/thespian.png';
 import VacuumLabsImage from '../../../assets/vacuumlabs.svg';
@@ -20,7 +19,7 @@ interface Props {
 	slidesPerView: number
 }
 
-export default function Contributors (props: Props): JSX.Element {
+export default function Contributors(props: Props): JSX.Element {
 	return (
 		<div className="py-20 my-20 items-center" id="contributors">
 			<h4 className='dappsSubtitle my-3'>The Alliance&apos;s</h4>
@@ -31,9 +30,9 @@ export default function Contributors (props: Props): JSX.Element {
 				autoplay={{
 					delay: 2000,
 					disableOnInteraction: false,
-					
-				}} 
-				slidesPerView={props.slidesPerView} 
+
+				}}
+				slidesPerView={props.slidesPerView}
 				navigation={false}
 				modules={[Navigation, Autoplay]}>
 				<SwiperSlide>
@@ -41,9 +40,6 @@ export default function Contributors (props: Props): JSX.Element {
 				</SwiperSlide>
 				<SwiperSlide>
 					<ContributorCard contributor="dcSpark" imageSrc={DcSparkImage} contributorWeb="https://www.dcspark.io/" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<ContributorCard contributor="Milkomeda" imageSrc={MilkomedaImage} contributorWeb="https://milkomeda.com/" />
 				</SwiperSlide>
 				<SwiperSlide>
 					<ContributorCard contributor="VacuumLabs" imageSrc={VacuumLabsImage} contributorWeb="https://vacuumlabs.com/" />
