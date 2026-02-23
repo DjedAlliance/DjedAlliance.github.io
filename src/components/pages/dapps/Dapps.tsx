@@ -1,6 +1,5 @@
 import ContributorCard from '../../elements/cards/ContributorCard';
 import SigmaUSDImage from '../../../assets/sigmaUSD.jpg';
-import DjedMilkomeda from '../../../assets/djed-milkomeda.svg';
 import DjedCOTI from '../../../assets/djed-coti.png';
 import ZSDImage from '../../../assets/zsd1.png';
 import ECSDImage from '../../../assets/ecsd.png';
@@ -26,14 +25,11 @@ export default function Dapps(props: Props): JSX.Element {
 					delay: 2000,
 					disableOnInteraction: true,
 				}}
-				slidesPerView={3}
+				slidesPerView={2}
 				navigation={false}
 				modules={[Navigation, Autoplay]}>
 				<SwiperSlide>
 					<ContributorCard contributor="SigmaUSD" imageSrc={SigmaUSDImage} contributorWeb="https://sigmausd.io/#/" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<ContributorCard contributor="Milkomeda Djed" imageSrc={DjedMilkomeda} contributorWeb="https://milkomeda-c1.djed.one/" />
 				</SwiperSlide>
 				<SwiperSlide>
 					<ContributorCard contributor="Ethereum Classic Stable Dollar" imageSrc={ECSDImage} contributorWeb="https://etc.djed.one/" />
