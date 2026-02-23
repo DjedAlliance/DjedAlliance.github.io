@@ -6,7 +6,7 @@ interface Props {
 
 export default function ContributorCard ({ contributor, imageSrc, contributorWeb }: Props): JSX.Element {
 	return (
-		<div className="card rounded-lg overflow-hidden shadow-lg border z-30 m-10 bg-white cursor-pointer" onClick={() => window.open(contributorWeb, '_blank')}>
+		<div className="card rounded-lg overflow-hidden shadow-lg border-[0.5px] border-[#353535] z-30 m-10 text-white bg-[linear-gradient(103deg,_#1A0E03_0.02%,_#272018_101.38%)] cursor-pointer" onClick={() => window.open(contributorWeb, '_blank')}>
 			<div className="px-6 pt-2 pb-2 m-5">
 				<div className='flex flex-row align-middle my-6 justify-center'>
 					<img className="rounded-full" style={{ width: '142px', height: '142px' }} src={imageSrc} />
