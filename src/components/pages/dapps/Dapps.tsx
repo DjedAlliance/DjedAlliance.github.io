@@ -13,9 +13,9 @@ interface Props {
 	slidesPerView: number
 }
 
-export default function Contributors(props: Props): JSX.Element {
+export default function Dapps(props: Props): JSX.Element {
 	return (
-		<div className="py-20 my-20 items-center" id="contributors">
+		<div className="py-20 my-20 items-center" id="djed_apps">
 			<h4 className='dappsSubtitle my-3'>Stablecoins based on the</h4>
 			<h2 className='dappsTitle mb-20'>Djed Protocol</h2>
 			<Swiper
