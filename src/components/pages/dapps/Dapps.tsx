@@ -52,7 +52,7 @@ export default function Dapps(props: Props): JSX.Element {
 					<ContributorCard contributor="Zephyr Stable Dollar" imageSrc={ZSDImage} contributorWeb="https://zephyrprotocol.com" />
 				</SwiperSlide>
 			</Swiper>
-		</section>
+		</div>
 	);
 }
 
