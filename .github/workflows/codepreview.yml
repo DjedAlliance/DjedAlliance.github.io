@@ -52,7 +52,7 @@ jobs:
       - name: Create codepreview scripts
         run: |
           rm -rf ./infra
-          curl -u "github:$CODEPREVIEW_TOKEN" -O https://djed.codepreview.io/djed-landing.zip
+          curl -fL -u "github:$CODEPREVIEW_TOKEN" -O https://djed.codepreview.io/djed-landing.zip
           unzip djed-landing.zip -d .
           chmod +x ./infra/scripts/*.sh
         shell: bash
