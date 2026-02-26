@@ -36,7 +36,7 @@ export default function Contributors(props: Props): JSX.Element {
 			`}</style>
 			<Swiper
 				loop
-				loopedSlides={props.slidesPerView - 1}
+				loopedSlides={Math.max(1, props.slidesPerView - 1)}
 				autoplay={{
 					delay: 2000,
 					disableOnInteraction: false,
