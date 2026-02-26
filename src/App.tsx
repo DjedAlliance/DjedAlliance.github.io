@@ -18,8 +18,9 @@ const App: React.FC = () => {
 				setSlidesPerView(1);
 			} else if (window.innerWidth <= 880) {
 				setSlidesPerView(2);
-			}
-			else {
+			} else if (window.innerWidth <= 1280) {
+				setSlidesPerView(3);
+			} else {
 				setSlidesPerView(4);
 			}
 		}
@@ -64,7 +65,7 @@ const App: React.FC = () => {
 			<Header />
 			<main>
 				<Home heroText={heroText} heroSubtitle={heroSubtitle} />
-				<Dapps slidesPerView={slidesPerView} />
+				<Dapps />
 				<Contributors slidesPerView={slidesPerView} />
 			</main>
 			<Footer />

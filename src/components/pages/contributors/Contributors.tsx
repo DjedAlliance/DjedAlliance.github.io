@@ -13,7 +13,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Navigation, Autoplay } from 'swiper';
+import { Navigation, Autoplay, Pagination } from 'swiper';
 
 interface Props {
 	slidesPerView: number
@@ -21,20 +21,34 @@ interface Props {
 
 export default function Contributors(props: Props): JSX.Element {
 	return (
-		<section className="py-20 my-20 items-center" id="contributors" aria-labelledby="contributors-heading">
+		<section className="py-20 px-4 sm:px-8 md:px-16 my-20 items-center" id="contributors" aria-labelledby="contributors-heading">
 			<p className='dappsSubtitle my-3'>The Alliance&apos;s</p>
 			<h2 id="contributors-heading" className='dappsTitle mb-20'>Contributors</h2>
+			<style>{`
+				#contributors .swiper-pagination-bullet {
+					background: #b8973a;
+					opacity: 0.4;
+				}
+				#contributors .swiper-pagination-bullet-active {
+					background: #d4a843;
+					opacity: 1;
+				}
+			`}</style>
 			<Swiper
 				loop
 				loopedSlides={props.slidesPerView - 1}
 				autoplay={{
 					delay: 2000,
 					disableOnInteraction: false,
-
+				}}
+				pagination={{
+					clickable: true,
 				}}
 				slidesPerView={props.slidesPerView}
 				navigation={false}
-				modules={[Navigation, Autoplay]}>
+				modules={[Navigation, Autoplay, Pagination]}
+				className="pb-10"
+			>
 				<SwiperSlide>
 					<ContributorCard contributor="Ergo" imageSrc={ErgoImage} contributorWeb="https://ergoplatform.org/en/" />
 				</SwiperSlide>
