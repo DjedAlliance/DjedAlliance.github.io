@@ -1,7 +1,9 @@
 import Logo from '../../../assets/djed-logo.png';
 import Discord from '../../../assets/discordLogo.png';
 import GitHub from '../../../assets/githubLogo.png';
-import Twitter from '../../../assets/Twitter.png';
+// import Twitter from '../../../assets/Twitter.png';
+import XLogo from '../../../assets/Xlogo.svg';
+
 import { useState } from 'react';
 
 const Header: React.FC = () => {
@@ -60,7 +62,7 @@ const Header: React.FC = () => {
 							<img src={GitHub} alt="GitHub" />
 						</a>
 						<a href="https://twitter.com/DjedAlliance" target="_blank" rel="noreferrer" aria-label="Follow Djed Alliance on X (Twitter)">
-							<img src={Twitter} alt="X (Twitter)" />
+							<img src={XLogo} alt="X (Twitter)" />
 						</a>
 					</div>
 				</div>
