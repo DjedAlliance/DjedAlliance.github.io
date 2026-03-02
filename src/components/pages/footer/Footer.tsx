@@ -5,17 +5,23 @@ import Twitter from '../../../assets/Twitter.png';
 
 const Footer = () => {
 	return (
-		<footer className='my-5'>
-			<div className='flex lg:flex-row flex-col lg:justify-evenly align-middle sm:justify-center md:justify-center'>
-				<p className='footerText lg:text-md sm:text-sm lg:mt-6 mb-3'>© Djed Alliance. All rights reserved.</p>
-				<div className='flex flex-row justify-center align-middle lg:my-0 my-3'>
-					<img src={Logo} className="mx-2 mb-1" alt="Djed Alliance logo" />
-					<p className='footerText lg:text-xl sm:text-sm mt-3 whitespace-pre'>Djed Alliance</p>
+		<footer className='footer-container'>
+			<div className='footer-content'>
+				<p className='footer-copyright'>© Djed Alliance. All rights reserved.</p>
+				<div className='footer-brand'>
+					<img src={Logo} alt="Djed Alliance logo" />
+					<p className='footer-title'>Djed Alliance</p>
 				</div>
-				<div className='flex flex-row mt-3 justify-center'>
-					<a href="https://discord.com/invite/5TWZwGXXym" target="_blank" rel="noreferrer" aria-label="Join Djed Alliance on Discord"><img className="socialImage mx-2 cursor-pointer" src={Discord} alt="Discord" /></a>
-					<a href="https://github.com/DjedAlliance" target="_blank" rel="noreferrer" aria-label="Djed Alliance GitHub"><img className="socialImage mx-2 cursor-pointer" src={GitHub} alt="GitHub" /></a>
-					<a href="https://twitter.com/DjedAlliance" target="_blank" rel="noreferrer" aria-label="Follow Djed Alliance on X (Twitter)"><img className="socialImage mx-2 cursor-pointer" src={Twitter} alt="X (Twitter)" /></a>
+				<div className='footer-social'>
+					<a href="https://discord.com/invite/5TWZwGXXym" target="_blank" rel="noreferrer" aria-label="Join Djed Alliance on Discord">
+						<img src={Discord} alt="Discord" />
+					</a>
+					<a href="https://github.com/DjedAlliance" target="_blank" rel="noreferrer" aria-label="Djed Alliance GitHub">
+						<img src={GitHub} alt="GitHub" />
+					</a>
+					<a href="https://twitter.com/DjedAlliance" target="_blank" rel="noreferrer" aria-label="Follow Djed Alliance on X (Twitter)">
+						<img src={Twitter} alt="X (Twitter)" />
+					</a>
 				</div>
 			</div>
 		</footer>
