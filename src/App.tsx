@@ -11,6 +11,7 @@ const App: React.FC = () => {
 	const heroSubtitle = 'The open union of all stablecoins based on \n the Djed Stablecoin Protocol';
 
 	const [slidesPerView, setSlidesPerView] = useState(4);
+	const [activeSection, setActiveSection] = useState<string>('home');
 
 	useEffect(() => {
 		function updateSize() {
@@ -30,38 +31,37 @@ const App: React.FC = () => {
 	}, []);
 
 	useEffect(() => {
+		const sectionMap: Record<string, string> = {
+			'home': 'home',
+			'djed_apps': 'djed_apps',
+			'contributors': 'contributors',
+		};
+
 		const observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					switch (entry.target.id) {
-					case 'home':
-						document.getElementsByClassName('active')[0].classList.remove('active');
-						document.getElementById('homeLink')?.classList.add('active');
-						break;
-					case 'djed_apps':
-						document.getElementsByClassName('active')[0].classList.remove('active');
-						document.getElementById('appsLink')?.classList.add('active');
-						break;
-					case 'contributors':
-						document.getElementsByClassName('active')[0].classList.remove('active');
-						document.getElementById('contributorsLink')?.classList.add('active');
+					const sectionId = sectionMap[entry.target.id];
+					if (sectionId) {
+						setActiveSection(sectionId);
 					}
 				}
 			});
-		}, { threshold: 0.8 });
-		const homeElementToObserve = document.querySelector('#home');
-		const appsElementToObserve = document.querySelector('#djed_apps');
-		const contributorElementToObserve = document.querySelector('#contributors');
-		if (homeElementToObserve && appsElementToObserve && contributorElementToObserve) {
-			observer.observe(homeElementToObserve);
-			observer.observe(appsElementToObserve);
-			observer.observe(contributorElementToObserve);
-		}
+		}, { threshold: 0.1, rootMargin: '-20% 0px -60% 0px' });
+
+		const sections = Object.keys(sectionMap)
+			.map((id) => document.getElementById(id))
+			.filter((el): el is HTMLElement => el !== null);
+
+		sections.forEach((el) => observer.observe(el));
+
+		return () => {
+			sections.forEach((el) => observer.unobserve(el));
+		};
 	}, []);
 
 	return (
 		<div className='app-wrapper'>
-			<Header />
+			<Header activeSection={activeSection} setActiveSection={setActiveSection} />
 			<main>
 				<Home heroText={heroText} heroSubtitle={heroSubtitle} />
 				<Dapps slidesPerView={slidesPerView} />
