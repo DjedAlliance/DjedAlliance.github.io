@@ -4,20 +4,25 @@ import GitHub from '../../../assets/githubLogo.png';
 import Twitter from '../../../assets/Twitter.png';
 import { useState } from 'react';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+	activeSection: string;
+	setActiveSection: (section: string) => void;
+}
 
-	const handleActive = (clickedLink: string, id: string) => {
-		document.getElementsByClassName('active')[0].classList.remove('active');
+const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
+	const { activeSection, setActiveSection } = props;
 
-		document.getElementById(clickedLink)?.classList.add('active');
+	const handleActive = (section: string, id: string) => {
+		setActiveSection(section);
 
 		if (id === '#') {
 			window.scrollTo({ top: 0, behavior: 'smooth' });
+		} else {
+			const scroll = document.getElementById(id);
+			scroll?.scrollIntoView({ behavior: 'smooth' });
 		}
 
-		const scroll = document.getElementById(id);
-		scroll?.scrollIntoView({ behavior: 'smooth' });
-
+		setIsOpen(false);
 	};
 
 	const [isOpen, setIsOpen] = useState(false);
@@ -26,10 +31,16 @@ const Header: React.FC = () => {
 		setIsOpen(!isOpen);
 	}
 
+	const navItems = [
+		{ section: 'home', id: '#', label: 'HOME' },
+		{ section: 'djed_apps', id: 'djed_apps', label: 'DJED' },
+		{ section: 'contributors', id: 'contributors', label: 'CONTRIBUTORS' },
+	];
+
 	return (
 		<nav className="navbar-glass" aria-label="Main navigation">
 			<div className="navbar-container">
-				<a href="#home" onClick={(e) => { e.preventDefault(); handleActive('homeLink', '#'); }} className="navbar-logo" aria-label="Djed Alliance - Go to home">
+				<a href="#home" onClick={(e) => { e.preventDefault(); handleActive('home', '#'); }} className="navbar-logo" aria-label="Djed Alliance - Go to home">
 					<img src={Logo} alt="Djed Alliance logo" />
 				</a>
 				<button 
@@ -46,9 +57,17 @@ const Header: React.FC = () => {
 				</button>
 				<div className={`navbar-menu ${isOpen ? 'navbar-menu-open' : ''}`} id="navbar-default">
 					<ul className="navbar-links">
-						<li><a id="homeLink" href="#home" className="navbar-link active" onClick={(e) => { e.preventDefault(); handleActive('homeLink', '#'); }}>HOME</a></li>
-						<li><a id="appsLink" href="#djed_apps" className="navbar-link" onClick={(e) => { e.preventDefault(); handleActive('appsLink', 'djed_apps'); }}>DJED</a></li>
-						<li><a id="contributorsLink" href="#contributors" className="navbar-link" onClick={(e) => { e.preventDefault(); handleActive('contributorsLink', 'contributors'); }}>CONTRIBUTORS</a></li>
+						{navItems.map((item) => (
+							<li key={item.section}>
+								<a
+									href={item.id === '#' ? '#home' : `#${item.id}`}
+									className={`navbar-link${activeSection === item.section ? ' active' : ''}`}
+									onClick={(e) => { e.preventDefault(); handleActive(item.section, item.id); }}
+								>
+									{item.label}
+								</a>
+							</li>
+						))}
 						<li><a href="https://docs.stability.nexus/about-us/the-djed-alliance" target="_blank" rel="noreferrer" className="navbar-link">DOCS</a></li>
 						<li><a href="https://medium.com/djed-alliance" target="_blank" rel="noreferrer" className="navbar-link">BLOG</a></li>
 					</ul>
