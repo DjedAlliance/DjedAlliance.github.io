@@ -20,6 +20,8 @@ jobs:
   preview:
 
     runs-on: ubuntu-latest
+    # Run for push; for PR, only same-repo PRs
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}  
 
     steps:
       - name: Install ansible
@@ -65,3 +67,11 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           PR_NUMBER: ${{ github.event.number }}
 
+  skip-if-fork:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository }}
+    steps:
+      - name: Print message and skip the workflow
+        run: |
+          echo "This PR is from a fork, skipping preview deployment."
+          echo "Skipping the workflow due to security restrictions on forks."
