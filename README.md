@@ -4,7 +4,7 @@
 <!-- Organization Logo -->
 
 <div align="center">
-  <img alt="Nautilus" src="public/readme-assets/Alliance.png" width="175">
+  <img alt="Nautilus" src="public/readme-assets/alliance.svg" width="175">
 </div>
 
 <br/>
