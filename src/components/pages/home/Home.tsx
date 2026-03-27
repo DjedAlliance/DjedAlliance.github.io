@@ -31,7 +31,7 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
 					</a>
 				</div>
 				<div className="lg:flex justify-end cursor-pointer my-5">
-					<img className='rounded-3xl items-center flex justify-center align-middle' src="/gallery/Alliance.png" alt="Djed Alliance's Logo" />
+					<img className='rounded-3xl items-center flex justify-center align-middle' src="/readme-assets/alliance.svg" alt="Djed Alliance's Logo" />
 				</div>
 			</div>
 			<Blur />

@@ -1,4 +1,4 @@
-import Logo from '../../../assets/djed-logo.png';
+import Logo from '../../../assets/djed-logo.svg';
 import Discord from '../../../assets/discordLogo.png';
 import GitHub from '../../../assets/githubLogo.png';
 import Twitter from '../../../assets/Twitter.png';
