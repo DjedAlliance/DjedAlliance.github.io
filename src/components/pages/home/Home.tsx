@@ -21,7 +21,7 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
 	return (
 		<section className="relative flex items-center justify-center bg-transparent my-24 overflow-hidden" id="home" style={{ height: '90vh' }}>
 			<img
-				src="/gallery/Alliance.png"
+				src="/readme-assets/Alliance.svg"
 				alt="Djed Alliance Logo Background"
 				className="absolute w-[640px] md:w-[768px] lg:w-[900px] max-w-none opacity-[0.04] pointer-events-none select-none p-6 justify-center items-center"
 			/>
