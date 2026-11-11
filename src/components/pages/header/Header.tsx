@@ -80,7 +80,7 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
 						<a href="https://github.com/DjedAlliance" target="_blank" rel="noreferrer" aria-label="Djed Alliance GitHub">
 							<img src={GitHub} alt="GitHub" />
 						</a>
-						<a href="https://twitter.com/DjedAlliance" target="_blank" rel="noreferrer" aria-label="Follow Djed Alliance on X (Twitter)">
+						<a href="https://x.com/DjedAlliance" target="_blank" rel="noreferrer" aria-label="Follow Djed Alliance on X (Twitter)">
 							<img src={XLogo} alt="X (Twitter)" />
 						</a>
 					</div>
