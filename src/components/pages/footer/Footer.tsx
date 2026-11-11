@@ -1,7 +1,7 @@
 import Logo from '../../../assets/djed-logo.svg';
 import Discord from '../../../assets/discordLogo.png';
 import GitHub from '../../../assets/githubLogo.png';
-import Twitter from '../../../assets/Twitter.png';
+import XLogo from '../../../assets/Xlogo.svg';
 
 const Footer = () => {
 	return (
@@ -15,7 +15,7 @@ const Footer = () => {
 				<div className='flex flex-row justify-center'>
 					<a href="https://discord.com/invite/5TWZwGXXym" target="_blank" rel="noreferrer" aria-label="Join Djed Alliance on Discord"><img className="socialImage mx-2 cursor-pointer" src={Discord} alt="Discord" /></a>
 					<a href="https://github.com/DjedAlliance" target="_blank" rel="noreferrer" aria-label="Djed Alliance GitHub"><img className="socialImage mx-2 cursor-pointer" src={GitHub} alt="GitHub" /></a>
-					<a href="https://twitter.com/DjedAlliance" target="_blank" rel="noreferrer" aria-label="Follow Djed Alliance on X (Twitter)"><img className="socialImage mx-2 cursor-pointer" src={Twitter} alt="X (Twitter)" /></a>
+					<a href="https://x.com/DjedAlliance" target="_blank" rel="noreferrer" aria-label="Follow Djed Alliance on X (Twitter)"><img className="socialImage mx-2 cursor-pointer" src={XLogo} alt="X (Twitter)" /></a>
 				</div>
 			</div>
 		</footer>
