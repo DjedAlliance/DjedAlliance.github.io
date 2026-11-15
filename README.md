@@ -65,7 +65,8 @@
 # [![](public/readme-assets/pin.svg)](#deployment-instructions) Deployment Instructions
 
 1. Install dependencies `npm install || yarn install`
-2. On `main` branch run command `npm run deploy ||  yarn deploy`
+2. Run locally with `npm run dev || yarn dev`
+3. Deployment is automatic: every push to `main` is built and published to GitHub Pages by [this workflow](.github/workflows/deploy.yml). No manual deploy is needed.
 
 <!-- Use Back Button after each section -->
 <div align="right"><kbd><a href="#readme-top" style="color: #F7941D">↑ Back to top ↑</a></kbd></div>
